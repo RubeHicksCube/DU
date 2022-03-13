@@ -1,0 +1,103 @@
+.title{
+    font-size: x-large;
+}
+.contained{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 30px repeat(7,1fr);
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.button {
+    border: 2px solid;
+    color: rgb(148, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    a.button {
+      border: 2px solid;
+      color: rgb(148, 0, 0);
+      padding: 16px 32px;
+    }
+    a.button:hover {
+      background-color: crimson;
+      color: white;
+    }
+    .button:hover {
+            background-color: crimson;
+            color: white;
+      
+}
+
+.head{
+    grid-area: hd;
+}
+
+.post{
+    grid-area: main;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+}
+
+.sidebar{
+    grid-area: sd;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.footer {
+    grid-area: ft;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+}
+
+/* Images */
+.img{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    max-width: 100%;
+    padding: 1%;
+    }
+    .back img{
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    }
+    .addimg{
+    display:flex;
+    width: 70%;
+    padding: 1%;   
+}
+    
+
+.center{
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
